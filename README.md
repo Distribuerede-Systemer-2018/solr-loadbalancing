@@ -31,6 +31,7 @@ curl -X POST "http://[IP]:8983/solr/[collection]/update?commit=true&separator=%0
 
 Gå ind i solr UIet, og tjek at dokumenterne er blevet indlæst. Vælg navnet på jeres collection i venstre side og gå ind på query. Når i søger skulle i gerne få `numFound: 128766`.
 
+## Test performance
 Kør nogle queries, og udvælg dig en du gerne vil teste. Brug chromes inspector til at finde URL'en. Det burde være noget i stil med ```http://[IP]:8983/solr/cities/select?_=1539199282537&q=...``` 
 
 Brug siege, apache bench eller noget helt tredje til at sammenligne hvordan solr performer når i sender queries direkte til den ene server, sammenlignet med at sende queries til load balanceren.
