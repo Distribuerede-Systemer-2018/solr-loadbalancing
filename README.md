@@ -9,7 +9,7 @@ Start med at start jeres solr cluster fra sidste gang, og sikr jer, at alle serv
 Derefter skal i starte en ny server og installere nginx på den
 
 ```
-sudo yum install ngnix
+sudo yum install nginx
 ```
 
 ...virker ikke, men kig på outputtet i terminalen, så burde i kunne regne den ud.
