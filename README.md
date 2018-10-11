@@ -20,6 +20,8 @@ Dens konfigurations-filer ligger i `/etc/nginx`
 
 Følg derefter guiden https://www.upcloud.com/support/how-to-set-up-load-balancing/ for at sætte nginx op - Start fra afsnittet "Configuring nginx as a load balancer".
 
+Efter du har sat nginx op skulle du gerne kunne tilgå solr via nginx serverens IP - så nginx sender forespørgsler videre til solr. Tjek også, at din forespørgsel ikke bliver sendt til den samme server hver gang. Det kan du fx gøre ved at trykke på core selector i venstre side - Her kan du se hvilke shards og replikas der ligger på den server du har ramt
+
 ## Indlæs data
 For at kunne teste performance er vi nødt til at have noget data i solr, så den kommer på arbejde. Det data har vi i filen citites1000_fixed.txt
 
